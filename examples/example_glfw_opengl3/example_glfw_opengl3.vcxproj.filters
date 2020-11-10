@@ -8,7 +8,7 @@
       <UniqueIdentifier>{f18ab499-84e1-499f-8eff-9754361e0e52}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="gl3w">
+    <Filter Include="glad">
       <UniqueIdentifier>{42f99867-3108-43b8-99d0-fabefaf1f2e3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -18,9 +18,6 @@
     </ClCompile>
     <ClCompile Include="..\..\imgui.cpp">
       <Filter>imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libs\gl3w\GL\gl3w.c">
-      <Filter>gl3w</Filter>
     </ClCompile>
     <ClCompile Include="..\..\imgui_demo.cpp">
       <Filter>imgui</Filter>
@@ -37,6 +34,9 @@
     <ClCompile Include="..\..\backends\imgui_impl_opengl3.cpp">
       <Filter>sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\libs\glad\src\glad.c">
+      <Filter>glad</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\imconfig.h">
@@ -44,12 +44,6 @@
     </ClInclude>
     <ClInclude Include="..\..\imgui.h">
       <Filter>imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\libs\gl3w\GL\gl3w.h">
-      <Filter>gl3w</Filter>
-    </ClInclude>
-    <ClInclude Include="..\libs\gl3w\GL\glcorearb.h">
-      <Filter>gl3w</Filter>
     </ClInclude>
     <ClInclude Include="..\..\imgui_internal.h">
       <Filter>imgui</Filter>
@@ -59,6 +53,12 @@
     </ClInclude>
     <ClInclude Include="..\..\backends\imgui_impl_opengl3.h">
       <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\glad\include\glad\glad.h">
+      <Filter>glad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\glad\include\KHR\khrplatform.h">
+      <Filter>glad</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
